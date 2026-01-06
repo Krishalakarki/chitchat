@@ -1,0 +1,15 @@
+# Web backend
+fastapi
+uvicorn
+python-multipart
+
+# Speech to Text (FREE, local)
+openai-whisper
+soundfile
+
+# Lightweight LLM (Flan-T5-Small)
+transformers
+sentencepiece
+
+# Text to Speech (offline, free)
+pyttsx3
