@@ -106,11 +106,7 @@ venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 ```
 
-> **Note:** `pyttsx3` requires a system TTS engine. On Linux, install `espeak`:
-> ```bash
-> sudo apt install espeak
-> ```
-> On macOS/Windows, the default system voices are used automatically.
+
 
 ---
 
@@ -152,14 +148,6 @@ Open your browser at `http://localhost:8501` and start talking! 🎤
 
 ---
 
-## 🛠️ Configuration
-
-| Variable | Location | Default | Description |
-|----------|----------|---------|-------------|
-| `BACKEND_URL` | `frontend/app.py` | `http://127.0.0.1:8000/chat-audio` | Backend endpoint URL |
-| `TEMP_DIR` | `frontend/app.py` & `text_to_speech.py` | `temp_audio/` | Directory for temp WAV files |
-
-To change the LLM or STT engine, edit `app/llm.py` and `app/speech_to_text.py` respectively.
 
 ---
 
@@ -206,18 +194,14 @@ Voice AI Friend is designed to be modular. Here are some easy ways to extend it:
 - Confirm FastAPI is running on port `8000` before launching Streamlit.
 - Check `BACKEND_URL` in `frontend/app.py` matches your backend address.
 
-**No audio output / silent WAV?**
-- On Linux, ensure `espeak` is installed: `sudo apt install espeak`
-- Run `python -c "import pyttsx3; e = pyttsx3.init(); e.say('test'); e.runAndWait()"` to verify TTS works.
 
 **Slow response?**
 - Check your LLM API latency. For local models, consider quantized versions for faster inference.
 
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+## Deployment
+**Huggingface spaces**
+ - https://huggingface.co/spaces/krishala/chitchat
 
 ---
 
