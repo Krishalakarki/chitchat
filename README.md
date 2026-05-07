@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎧 Voice AI Friend
+# 🎧 Voice AI Friend -- CHITCHAT
 
 **Talk. Listen. Connect. — Your personal AI companion, powered by voice.**
 
@@ -89,15 +89,14 @@ voice-ai-friend/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/voice-ai-friend.git
-cd voice-ai-friend
+git clone https://github.com/Krishalakarki/chitchat.git
+cd chitchat
 ```
 
 ### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate        # macOS/Linux
 venv\Scripts\activate           # Windows
 ```
 
